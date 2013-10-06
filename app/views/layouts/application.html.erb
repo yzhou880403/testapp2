@@ -20,16 +20,16 @@
     </a>
      
     <!-- Be sure to leave the brand out there if you want it shown -->
-    <a class="brand" href="#">Ashley's Project</a>
+    
+    <%= link_to 'Home',root_path, :class=> 'brand'%>
      
     <!-- Everything you want hidden at 940px or less, place within here -->
     <div class="nav-collapse collapse">
     <!-- .nav, .navbar-search, .navbar-form, etc -->
 
 		<ul class="nav">
-		<li><%= link_to 'My App','#'%></li>
-		<li><%= link_to 'My Pictures','#'%></li>
-		</ul>
+		<li><%= link_to 'My Pictures', pics_path %></li>
+		<li><%= link_to 'Add New Pictures', new_pic_path%></li>
 
        <form class="navbar-search pull-left">
     <input type="text" class="search-query" placeholder="Search">

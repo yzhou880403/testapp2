@@ -1,9 +1,10 @@
 
-<h1> My Pics </h1>
+<h1> My Pictures </h1>
+
 
 <% @pics.each do |pic| %>
-	<div class ="my-wrapper">
-		<h2>
+	<div class ="span5 pic-section text-center">
+		<h2 class="custom-font2">
 			Hours <%= pic.hour %>
 		</h2>
 
@@ -15,5 +16,5 @@
 		<p> 
 			I learned that <%= pic.learned %>
 
-	</div>
+</div>
 <% end %>

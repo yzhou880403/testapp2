@@ -3,10 +3,15 @@
 
 
 <% @pics.each do |pic| %>
-	<div class ="span5 pic-section text-center">
+	<div class ="span5 stolen-surfbox text-center">
 		<h2 class="custom-font2">
 			Hours <%= pic.hour %>
 		</h2>
+
+		<div> 
+			<%= image_tag pic.image %>
+
+		</div>
 
 		<h3>
 			I feel <%= pic.emotion %>

@@ -5,9 +5,10 @@
 	<div class="span6 offset3 stolen-surfbox">
 		<%= simple_form_for @pic do |f| %>
 			<%= f.input :hour %>
+			<%= f.input :image, :as => :file %>
 			<%= f.input :emotion %>
 			<%= f.input :learned %>
-			<%= submit_tag "Save my Picture", :class => 'btn btn-large btn-primary' %>
+			<%= submit_tag "Save my Picture", :class => 'btn btn-large btn-inverse' %>
 		<% end %>
 	</div>
 </div>

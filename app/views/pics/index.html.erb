@@ -1,6 +1,19 @@
 
 <h1> My Pics </h1>
 
-<%= @pics.each do |pic| %>
-		<%= pic.inspect %>
+<% @pics.each do |pic| %>
+	<div class ="my-wrapper">
+		<h2>
+			Hours <%= pic.hour %>
+		</h2>
+
+		<h3>
+			I feel <%= pic.emotion %>
+
+		</h3>
+
+		<p> 
+			I learned that <%= pic.learned %>
+
+	</div>
 <% end %>
